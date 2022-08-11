@@ -1,0 +1,74 @@
+baseURL = "https://kalilistic.github.io"
+title = "Rookie Reverser"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableEmoji = true
+
+[params]
+author = "Rookie Reverser"
+keywords = "blog,developer,personal"
+info = ["a blog about learning reverse engineering and other things"]
+avatarURL = "images/logo.svg"
+dateFormat = "January 2, 2006"
+since = 2022
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = []
+customSCSS = []
+customJS = []
+favicon_32 = "images/logo.svg"
+favicon_16 = "images/logo.svg"
+
+[params.csp]
+childsrc = ["'self'"]
+fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+formaction = ["'self'"]
+framesrc = ["'self'"]
+imgsrc = ["'self'"]
+objectsrc = ["'none'"]
+stylesrc = [
+  "'self'",
+  "'unsafe-inline'",
+  "https://fonts.googleapis.com/",
+  "https://cdn.jsdelivr.net/"
+]
+scriptsrc = [
+  "'self'",
+  "'unsafe-inline'",
+  "https://cdn.jsdelivr.net/"
+]
+prefetchsrc = ["'self'"]
+connectsrc = ["'self'"]
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/kalilistic/"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-2x fa-twitter"
+weight = 3
+url = "https://twitter.com/kalilistic/"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
